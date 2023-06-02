@@ -1,0 +1,93 @@
+html {
+  /* background-color: green; */
+  font-size: 20px;
+}
+
+ul {
+  background: red;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+li {
+  margin-left: 20px;
+}
+
+
+a:link {
+  color: green;
+  border-bottom: 1px dashed;
+}
+
+
+a:visited {
+  color: #EF7D55;
+}
+
+
+a:hover {
+  color: #154088;
+  border-bottom: .07em solid;
+}
+
+a:active {
+  color: #497DDD;
+  border-bottom: 1px dashed;
+}
+
+.sticky {
+  color: red;
+  position: sticky;
+  top: 0;
+}
+
+.sticky::before {
+  width: 30px;
+  height: 30px;
+  background-color: orange;
+  display: block;
+  content: ""
+}
+
+.sticky::after {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(140, 0, 255);
+  display: block;
+  content: ""
+}
+
+.a {
+  width: 30%;
+  background-color: rgb(140, 0, 255);
+  display: flex;
+}
+
+.a::before {
+  content: "";
+  padding-top: 100%;
+}
+.a div{
+ transform: translateX(50px);
+  transition: 2s;
+}
+/*
+.a div:hover {
+  transform: translateX(50px);
+
+} */
+
+.aa {
+  position: relative;
+  right: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-auto-rows: 150px;
+    grid-gap: 20px;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
